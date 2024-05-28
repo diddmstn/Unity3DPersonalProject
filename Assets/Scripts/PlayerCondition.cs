@@ -29,7 +29,7 @@ public class PlayerCondition : MonoBehaviour, IDamagalbe
 
     public void TakePhysicalDamage(int damage)
     {
-        health.Subtract(3f);
+        health.Subtract(damage);
     }
 
     public bool UseStamina()
