@@ -4,6 +4,8 @@ using UnityEngine;
 using System;
 using UnityEngine.InputSystem;
 
+
+
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
@@ -134,41 +136,7 @@ public class PlayerController : MonoBehaviour
         return false;
     }
 
-//     [Header("Camera")]
-//     public float maxCheckDistance;
-//    public LayerMask layerMask;
-//    public Vector3 ThirdPersonPosition;
 
-//     void CameraMove()
-//     {
-//         //Ray ray= _camera.ScreenPointToRay(new Vector3(Screen.width/2, Screen.height/2));
-//         Ray ray= new Ray(cameraContainer.transform.position,cameraContainer.forward) ;
-//         RaycastHit hit;
-//         Debug.DrawRay(cameraContainer.transform.position,cameraContainer.forward, Color.blue);
-
-
-//         Vector3 raydir = cameraContainer.transform.position- this.transform.position;
-//         if(Physics.Raycast(this.transform.position, raydir , out hit,maxCheckDistance, layerMask))
-//         {
-//             Debug.Log("hit");
-//            // cameraContainer.transform.localPosition = ThirdPersonPosition;
-//             cameraContainer.transform.position=hit.point -raydir.normalized;
-
-            
-//           //  cameraContainer.transform.localPosition
-//         }
-//          else
-//          {
-//             Debug.Log("?");
-//             cameraContainer.transform.localPosition = new Vector3(0,3f,-3);
-//          }
-//         // {
-//         //     //cameraContainer.transform.localPosition = new Vector3(0,0.5f,0);
-//         //     cameraContainer.transform.localPosition = Vector3.Lerp(cameraContainer.transform.localPosition, new Vector3(0,0.5f,0),Time.deltaTime);
-
-//         // }
-           
-//     }
 }
 
 

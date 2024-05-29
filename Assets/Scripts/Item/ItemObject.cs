@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ItemObject : MonoBehaviour
 {
    public ItemData itemData;
@@ -25,4 +26,6 @@ public class ItemObject : MonoBehaviour
 
         }
    }
+
+
 }

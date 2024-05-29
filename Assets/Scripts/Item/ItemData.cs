@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+public interface IIteractable
+{
+    public string GetInteractPrompt();
+    public void OnIteract();
+}
 public enum ConsumableType
 {
     Health,
