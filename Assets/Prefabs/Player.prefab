@@ -104,7 +104,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 183
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 7431230399062883397}
   - component: {fileID: 3321575266804507879}
   - component: {fileID: 4875927796889943244}
+  - component: {fileID: 570818231343431857}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -284,6 +285,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 247b6d94-2a76-46a0-ad52-457005c8949f
     m_ActionName: Player/Dash[/Keyboard/shift]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 570818231343431857}
+        m_TargetAssemblyTypeName: Interaction, Assembly-CSharp
+        m_MethodName: OnInteractInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 404438d2-5f77-4ed6-9f71-2b2995f5d7e8
+    m_ActionName: Player/Interaction[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -378,6 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   condition: {fileID: 0}
+  startTransform: {x: 0, y: 0, z: 0}
 --- !u!114 &4875927796889943244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +410,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uICondition: {fileID: 0}
   reduceStamina: 5
+--- !u!114 &570818231343431857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3740323306317606383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0246303e1d1dd1744812633da39e793f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkRate: 0.05
+  maxCheckDistance: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  curInteractGameObject: {fileID: 0}
+  promptText: {fileID: 0}
 --- !u!1 &4522877133906534259
 GameObject:
   m_ObjectHideFlags: 0

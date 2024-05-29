@@ -10,7 +10,6 @@ public class Condition : MonoBehaviour
     public float passiveValue;
     public Image uiBar;
 
-
     private void Start() 
     {
         curValue=startValue;

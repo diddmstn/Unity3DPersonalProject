@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
     }
     private void LateUpdate() 
     {
+        if(Time.timeScale!=0)
         CameraLook();
     }
 
