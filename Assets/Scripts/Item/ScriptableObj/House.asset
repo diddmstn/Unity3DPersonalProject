@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921ddaf58d11d184ea5a96b65f07d5b4, type: 3}
+  m_Script: {fileID: 11500000, guid: e53c63eb9815a8a4681035820fe4bfa8, type: 3}
   m_Name: House
   m_EditorClassIdentifier: 
-  consumable: 0
   displayName: "\uC9D1"
-  description: "\uC9D1\uC774\uB2E4.......\uBB50\uD560\uC218 \uC788"
-  value: 0
+  description: "\uC544\uC9C1 \uBCC4 \uB2E4\uB978 \uAE30\uB2A5\uC774 \uC5C6\uC5B4\uBCF4\uC778\uB2E4."
