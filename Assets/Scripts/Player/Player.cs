@@ -9,13 +9,23 @@ public class Player : MonoBehaviour
 
     private void Awake() 
     {
-        CharacterManager.Instance.Player=this;
+        if(CharacterManager.Instance.Player==null)
+        {
+            CharacterManager.Instance.Player=this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        
         controller = GetComponent<PlayerController>();
         condition = GetComponent<PlayerCondition >();
-        DontDestroyOnLoad(gameObject);
+
+        
     }
-    public void SetPosition()
+    public void SetPosition(int index)
     {
-        this.transform.position =startPos[GameManager.instance.currentSceneIndex];
+        this.transform.position =startPos[index];
     }
 }

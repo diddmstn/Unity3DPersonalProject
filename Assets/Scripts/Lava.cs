@@ -11,7 +11,7 @@ public class Lava : MonoBehaviour
         if(other.TryGetComponent(out IDamagalbe damagalbe))
         {
             damagalbe.TakePhysicalDamage(damage);
-            CharacterManager.Instance.Player.SetPosition();//플레이어를 시작 위치로 이동
+            CharacterManager.Instance.Player.SetPosition(GameManager.instance.currentSceneIndex);//플레이어를 시작 위치로 이동
         }
     }
 

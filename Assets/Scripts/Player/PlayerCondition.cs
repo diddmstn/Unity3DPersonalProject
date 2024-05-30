@@ -42,4 +42,10 @@ public class PlayerCondition : MonoBehaviour, IDamagalbe
         stamina.Subtract(reduceStamina);
         return true;
     }
+    
+    public void ResetCondition()
+    {
+        health.curValue= health.maxValue;
+        stamina.curValue= stamina.maxValue;
+    }
 }
