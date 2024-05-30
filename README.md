@@ -1,7 +1,7 @@
 <div align = "center">
   
   # :video_game: Unity3DPesonalProject
-  __Unity 게임개발 숙련주차 개 프로젝트__ <br><br>
+  __Unity 게임개발 숙련주차 개인 프로젝트__ <br><br>
   
 ## :page_with_curl: 프로젝트 설명
 __플레이어가 이동, 점프 또는 대쉬를 사용하여<br> 맵에 있는 오브젝틀을 활용해 도착지점까지 도달하는 간단한 게임__ <br><br>
