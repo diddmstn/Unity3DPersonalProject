@@ -30,6 +30,10 @@ public class PlayerCondition : MonoBehaviour, IDamagalbe
     public void TakePhysicalDamage(int damage)
     {
         health.Subtract(damage);
+        if(health.curValue==0)
+        {
+            GameManager.instance.GameOver();
+        }
     }
 
     public bool UseStamina()
@@ -42,6 +46,7 @@ public class PlayerCondition : MonoBehaviour, IDamagalbe
         stamina.Subtract(reduceStamina);
         return true;
     }
+    
     
     public void ResetCondition()
     {

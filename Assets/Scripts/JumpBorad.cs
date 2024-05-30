@@ -7,11 +7,19 @@ public class JumpBorad : MonoBehaviour
     Coroutine corutine;
     public float delay;
     public float forceAmount;
+    Vector3 curTransform;
 
+    void Start()
+    {
+        curTransform=this.transform.position;
+    }
     private void OnCollisionEnter(Collision other)
     {
-        if(corutine!=null) StopCoroutine(Generate(null));
-        corutine= StartCoroutine(Generate(other.gameObject));
+        if(corutine==null) 
+        {
+            corutine= StartCoroutine(Generate(other.gameObject));
+            this.transform.position -= new Vector3(0,0.15f,0);
+        }
     }
 
     IEnumerator Generate(GameObject obj)
@@ -20,5 +28,8 @@ public class JumpBorad : MonoBehaviour
         Rigidbody rb=obj.GetComponent<Rigidbody>();
         rb.velocity= Vector3.zero;
         rb.AddForce(Vector3.up*forceAmount, ForceMode.Impulse);
+        this.transform.position = curTransform;
+        corutine=null;
+
     }
 }
