@@ -1,6 +1,6 @@
 <div align = "center">
   
-  # :video_game: BrickBreak
+  # :video_game: Unity3DPesonalProject
   __Unity 게임개발 숙련주차 개 프로젝트__ <br><br>
   
 ## :page_with_curl: 프로젝트 설명
